@@ -1,39 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Roboto&display=swap" rel="stylesheet">
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-
-  <title>Frontend Mentor | Manage landing page</title>
-
-
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="https://kit.fontawesome.com/f03e692ea9.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-</head>
-<body>
-  <div class="container-fluid">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <title>Frontend Mentor | Manage landing page</title>
+    <link rel="stylesheet" href="stylesnew.css" />
+    <script
+      src="https://kit.fontawesome.com/f03e692ea9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <div><img src="images/logo.svg" width="100" height="23"  alt=""></div>
-        
-        
-        <button class="navbar-toggler" type="button" data-toggle="collapse" name="button"></button>
-        <div class="collapse navbar-collapse">
-          <ul class="navbar-nav " width="167" height="43">
-            <li class="nav-item">
-
-              
-  
-            </li>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="images/logo.svg" width="100" height="23" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuItems"
+          aria-controls="menuItems"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuItems">
+          <ul class="navbar-nav mx-auto">
             <li class="nav-item">
               <a href="#product" class="nav-link">Product</a>
             </li>
@@ -43,193 +58,223 @@
             <li class="nav-item">
               <a href="#prices" class="nav-link">Prices</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item ">
               <a href="#community" class="nav-link">Community</a>
+            </li>
+            <li class="nav-item">
+              <a id="contact" href="#" class="rounded-pill nav-link btn-top"
+                >Contact</a
+              >
             </li>
           </ul>
         </div>
-
-
-        
-<!-- Button trigger modal -->
-<!-- <button type="button" class="btn btn-top rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleModal">
- Our History
-</button> -->
-<div id="contact" class="rounded-pill btn-top">Contact</div>
-
-<div id="contactForm" class="proba">
-
-  <h1>Keep in touch!</h1>
-  <small>I'll get back to you as quickly as possible</small>
-  
-  <form action="#">
-    <input placeholder="Name" type="text" required />
-    <input placeholder="Email" type="email" required />
-    <input placeholder="Subject" type="text" required />
-    <textarea placeholder="Comment"></textarea>
-    <input class="formBtn" type="submit" />
-    <input class="formBtn" type="reset" />
-  </form>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </div>
+      </div>
+      <div id="contactForm" class="proba">
+        <h1>Keep in touch!</h1>
+        <small>I'll get back to you as quickly as possible</small>
+        <form action="#">
+          <div class="mb-3">
+            <input placeholder="Name" type="text" required />
+          </div>
+          <div class="mb-3">
+            <input placeholder="Email" type="email" required />
+          </div>
+          <div class="mb-3">
+            <input placeholder="Subject" type="text" required />
+          </div>
+          <div class="mb-3">
+            <textarea placeholder="Comment"></textarea>
+          </div>
+          
+          <button class="formBtn" type="submit">Submit</button>
+          <button class="formBtn" type="reset">Reset</button>
+        </form>
+      </div>
     </nav>
-    </div>
+
+    
 
     <div class="container first">
       <div class="row">
-      <div class="both-sides left">
-        <h1>Bring everyone together to build better products.</h1>
-        <p>Manage makes it simple for software teams to plan day-to-day 
-          tasks while keeping the larger team goals in view.
-        </p>
-        <button type="button" class="btn btn-second rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleModal">Our History</button>
-        <!-- Button trigger modal -->
-<!-- <button type="button" class="btn btn-top rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleModal"> -->
- 
- </button>
+        <div class="both-sides left">
+          <h1>Bring everyone together to build better products.</h1>
+          <p>
+            Manage makes it simple for software teams to plan day-to-day tasks
+            while keeping the larger team goals in view.
+          </p>
+          <button
+            type="button"
+            class="btn btn-second rounded-pill"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Our History
+          </button>
 
- 
- <!-- Modal -->
- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-   <div class="modal-dialog">
-     <div class="modal-content">
-       <div class="modal-header">
-         <h1 class="modal-title fs-5" id="exampleModalLabel">Our History</h1>
-         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-       </div>
-       <div class="modal-body">
-      
-        <p>
-         In 2005, three friends who were passionate about technology and entrepreneurship founded a small IT company in a garage. They started off building simple websites and providing 
-         basic tech support services to local businesses. However, their drive and innovation soon caught the attention of larger companies, and they expanded their 
-         services to include software development and network infrastructure management.<br><br>
- 
- By 2010, the company had grown significantly and had established itself as a major player in the industry. They had a large team of developers, designers, and engineers who worked 
- on various projects for clients across different sectors. Their reputation for delivering high-quality solutions and exceptional customer service had earned them a loyal customer base, 
- and they continued to expand their offerings to meet the evolving needs of their clients.<br><br>
- 
- Fast forward to 2021, and the company has become a household name in the tech industry. They have offices in multiple cities and employ thousands of people worldwide. 
- They have developed cutting-edge technologies in AI, cybersecurity, and cloud computing, among other fields, and have partnerships with some of the world's biggest tech companies. 
- Despite their success, the company remains committed to its core values of innovation, excellence, and customer satisfaction.
-       </p>
-       </div>
-       <div class="modal-footer">
-         <button type="button" class="btn btn-modal" data-bs-dismiss="modal">Close</button>
-       </div>
-     </div>
-   </div>
- </div>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Our History
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    In 2005, three friends who were passionate about technology
+                    and entrepreneurship founded a small IT company in a garage.
+                    They started off building simple websites and providing
+                    basic tech support services to local businesses. However,
+                    their drive and innovation soon caught the attention of
+                    larger companies, and they expanded their services to
+                    include software development and network infrastructure
+                    management.<br /><br />
 
+                    By 2010, the company had grown significantly and had
+                    established itself as a major player in the industry. They
+                    had a large team of developers, designers, and engineers who
+                    worked on various projects for clients across different
+                    sectors. Their reputation for delivering high-quality
+                    solutions and exceptional customer service had earned them a
+                    loyal customer base, and they continued to expand their
+                    offerings to meet the evolving needs of their clients.<br /><br />
 
-
-
-
-
-
-
-
-      </div>
-      <div class="both-sides right">
-        <img class="illustration" src="images/illustration-intro.svg">
+                    Fast forward to 2021, and the company has become a household
+                    name in the tech industry. They have offices in multiple
+                    cities and employ thousands of people worldwide. They have
+                    developed cutting-edge technologies in AI, cybersecurity,
+                    and cloud computing, among other fields, and have
+                    partnerships with some of the world's biggest tech
+                    companies. Despite their success, the company remains
+                    committed to its core values of innovation, excellence, and
+                    customer satisfaction.
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-modal"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="both-sides right">
+          <img class="illustration" src="images/illustration-intro.svg" />
+        </div>
       </div>
     </div>
-  </div>
     <div class="container second" id="product">
       <div class="row">
-  <div class="both-sides left">
-    <h2>What's different about Manage?</h2>
-    <p>Manage provides all the functionality your team needs, without 
-      the complexity. Our software is tailor-made for modern digital 
-      product teams. </p>
-  </div>
-  <div class="both-sides right">
-    <ol>
-    <li class="items">
-      <span class="li-top">Track company-wide progress</span>
-    <div class="li-text">See how your day-to-day tasks fit into the wider vision. Go from 
-      tracking progress at the milestone level all the way done to the 
-      smallest of details. Never lose sight of the bigger picture again.</div>
-    </li>
-  <li class="items">
-    <span class="li-top">Advanced built-in reports</span>
-    <div class="li-text">Set internal delivery estimates and track progress toward company 
-        goals. Our customisable dashboard helps you build out the reports 
-        you need to keep key stakeholders informed.
-        </div></li>
-      
-    <li class="items">
-      <span class="li-top">Everything you need in one place</span>
-      <div class="li-text">Stop jumping from one service to another to communicate, store files, 
-          track tasks and share documents. Manage offers an all-in-one team 
-          productivity solution.</div></li>
-      
-        
-        </ol>
-  </div>
-  </div>
-    </div>
-    <div class="comments-header" id="community">
-      <h2>What they've said</h2>
-    </div>
-    <div class="container third">
-  
-      <div class="row">
-        
-        <div class="person three-sides">
-          <img src="images/avatar-anisha.png" class="avatar">
-          <h3>Anisha Li</h3>
-          <p>“Manage has supercharged our team's workflow. The ability to maintain 
-            visibility on larger milestones at all times keeps everyone motivated.”</p>
+        <div class="both-sides left mg-bottom">
+          <h2>What's different about Manage?</h2>
+          <p>
+            Manage provides all the functionality your team needs, without the
+            complexity. Our software is tailor-made for modern digital product
+            teams.
+          </p>
         </div>
-        <div class="person three-sides">
-          <img src="images/avatar-ali.png" class="avatar">
-          <h3>Ali Bravo</h3>
-          <p>“We have been able to cancel so many other subscriptions since using 
-            Manage. There is no more cross-channel confusion and everyone is much 
-            more focused.”</p>
-        </div>
-        <div class="person three-sides">
-          <img src="images/avatar-richard.png" class="avatar">
-          <h3>Richard Watts</h3>
-          <p>“Manage allows us to provide structure and process. It keeps us organized 
-            and focused. I can't stop recommending them to everyone I talk to!”</p>
+        <!-- </div> -->
+        <!-- <div class="row"> -->
+        <div class="both-sides right">
+          <ol>
+            <li class="items">
+              <span class="li-top">Track company-wide progress</span>
+              <div class="li-text">
+                See how your day-to-day tasks fit into the wider vision. Go from
+                tracking progress at the milestone level all the way done to the
+                smallest of details. Never lose sight of the bigger picture
+                again.
+              </div>
+            </li>
+            <li class="items">
+              <span class="li-top">Advanced built-in reports</span>
+              <div class="li-text">
+                Set internal delivery estimates and track progress toward
+                company goals. Our customisable dashboard helps you build out
+                the reports you need to keep key stakeholders informed.
+              </div>
+            </li>
+
+            <li class="items">
+              <span class="li-top">Everything you need in one place</span>
+              <div class="li-text">
+                Stop jumping from one service to another to communicate, store
+                files, track tasks and share documents. Manage offers an
+                all-in-one team productivity solution.
+              </div>
+            </li>
+          </ol>
         </div>
       </div>
-      
     </div>
-    <div class="started-2">
-    <button type="button" class="btn btn-end rounded-pill">Get Started</button>
-  </div>
-    
-  <div class="container-fluid pre-footer-cont">
-  <div class="row">
-    <div class="pre-footer">
-      <h4>Simplify how your team works today.</h4>
+    <div class="container">
+      <div class="row">
+        <div class="comments-header" id="community">
+          <h2>What they've said</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="person three-sides">
+          <img src="images/avatar-anisha.png" class="avatar" />
+          <h3>Anisha Li</h3>
+          <p>
+            “Manage has supercharged our team's workflow. The ability to
+            maintain visibility on larger milestones at all times keeps everyone
+            motivated.”
+          </p>
+        </div>
+        <div class="person three-sides">
+          <img src="images/avatar-ali.png" class="avatar" />
+          <h3>Ali Bravo</h3>
+          <p>
+            “We have been able to cancel so many other subscriptions since using
+            Manage. There is no more cross-channel confusion and everyone is
+            much more focused.”
+          </p>
+        </div>
+        <div class="person three-sides">
+          <img src="images/avatar-richard.png" class="avatar" />
+          <h3>Richard Watts</h3>
+          <p>
+            “Manage allows us to provide structure and process. It keeps us
+            organized and focused. I can't stop recommending them to everyone I
+            talk to!”
+          </p>
+        </div>
+      </div>
     </div>
-    <div class="pre-footer pre-buton-space">
-      <button type="button" class="btn btn-pre-footer rounded-pill">Get Started</button>
+    <div class="container-fluid pre-footer-cont">
+      <div class="row">
+        <div class="pre-footer">
+          <h4>Simplify how your team works today.</h4>
+        </div>
+        <div class="pre-footer pre-buton-space">
+          <button type="button" class="btn btn-end rounded-pill">
+            Get Started
+          </button>
+        </div>
+      </div>
     </div>
-  </div>
-  </div>
-  
-  <!-- <div class="container-fluid footer">
+
+    <!-- <div class="container-fluid footer">
     <div class="row footer-mb">
       <div class="logomedia">
       <div class="footer-logo footer-width ">
@@ -266,46 +311,45 @@
       Coded by <a href="#">Patrycja.</a></p>
     </div> -->
 
-
-
     <footer>
       <div class="footer-content">
-          <h5>Foolish Developer</h5>
-          <p>Raj Template is a blog website where you will find great tutorials on web design and development. Here each tutorial is beautifully described step by step with the required source code.</p>
-          <ul class="socials">
-              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-              <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-              <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-          </ul>
+        <h5>Foolish Developer</h5>
+        <p>
+          Raj Template is a blog website where you will find great tutorials on
+          web design and development. Here each tutorial is beautifully
+          described step by step with the required source code.
+        </p>
+        <ul class="socials">
+          <li>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-linkedin-square"></i></a>
+          </li>
+        </ul>
       </div>
       <div class="footer-bottom">
-          <p>copyright &copy; <a href="#">Foolish Developer</a>  </p>
-                  <div class="footer-menu">
-                    <ul class="f-menu">
-                      <li><a href="">Home</a></li>
-                      <li><a href="#products" class="color">Products</a></li>
-                      <li><a href="#pricing" class="color">Pricing</a></li>
-                      <li><a href="">Contact</a></li>
-                    </ul>
-                  </div>
+        <p>copyright &copy; <a href="#">Foolish Developer</a></p>
+        <div class="footer-menu">
+          <ul class="f-menu">
+            <li><a href="">Home</a></li>
+            <li><a href="#products" class="color">Products</a></li>
+            <li><a href="#pricing" class="color">Pricing</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
       </div>
+    </footer>
 
-  </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="index.js"></script>
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>
